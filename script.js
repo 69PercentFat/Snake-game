@@ -30,14 +30,20 @@ function gameLoop() {
 
     // Check for collision with the wall or itself
     if (snakeX < 0 || snakeX >= grid || snakeY < 0 || snakeY >= grid) {
-        clearInterval(game);
-        alert("Game over! Your score: " + tailLength);
+        // Reset the snake's position and tail
+        snakeX = 2;
+        snakeY = 2;
+        tailLength = 0;
+        tail = [];
     }
 
     for (let i = 0; i < tail.length; i++) {
         if (tail[i].x === snakeX && tail[i].y === snakeY) {
-            clearInterval(game);
-            alert("Game over! Your score: " + tailLength);
+            // Reset the snake's position and tail
+            snakeX = 2;
+            snakeY = 2;
+            tailLength = 0;
+            tail = [];
         }
     }
 
