@@ -1,0 +1,1 @@
+This is an incomplete snake game with unlimited lives and no local storage to store anything. everytime the snake eats something it respawns again at the same place, and snake can even go outside the box from 3 sides
